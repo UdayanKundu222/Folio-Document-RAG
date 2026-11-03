@@ -1,0 +1,21 @@
+RAG DOCUMENT Q&A
+
+START
+  cd "C:\Users\udaya\OneDrive\Desktop\Projects\rag-document-qa"
+  .venv\Scripts\python -m uvicorn main:app --port 8010
+
+OPEN
+  http://localhost:8010        app
+  http://localhost:8010/docs   API
+
+LOADED COLLECTIONS
+  papers     Attention Is All You Need
+  speeches   State of the Union
+
+DEMO QUESTIONS
+  papers:   How many attention heads does the base Transformer use, and why?
+  speeches: Who did the president nominate to the Supreme Court?
+  speeches: What is the capital of Australia?   (-> "I don't know")
+
+STOP
+  Ctrl+C
